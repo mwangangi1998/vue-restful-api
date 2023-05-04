@@ -27,3 +27,10 @@ npm run dev
 ```sh
 npm run build
 ```
+<h4> image of project</h4>
+<p>fetched data from API</P>
+<img src="images/001.PNG" width=" 100%" height="50%">
+<P>Create skill page</p>
+<img src="images/002-create.PNG" width=" 100%" height="50%">
+<P>Edit Skill page</p>
+<img src="images/edit-003.PNG" width=" 100%" height="50%">
