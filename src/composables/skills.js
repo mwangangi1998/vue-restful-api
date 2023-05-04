@@ -13,7 +13,7 @@ const getSkills=async()=>{
     skills.value=response.data.data;
 };
 const getSkill=async(id)=>{
-    const response=await axios.get("skills"+id);
+    const response=await axios.get("skills/"+id);
     skill.value=response.data.data;
 }
 const storeSkill=async(data)=>{
