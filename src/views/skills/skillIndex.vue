@@ -2,7 +2,7 @@
 import useSkills from '../../composables/skills';
 import { onMounted } from "vue";
 import SkillEdit from './skillEdit.vue';
-const { skills, getSkills } = useSkills();
+const { skills, getSkills,destroySkill } = useSkills();
 onMounted(() => getSkills())
 </script>
 <template>
@@ -25,7 +25,9 @@ onMounted(() => getSkills())
                 <td>{{ skill.slug }}</td>
                 <td>
                     <RouterLink :to="{ name: 'skillEdit', params: { id: skill.id } }" class="editbtn">Edit</RouterLink>
-                    <button class="delete">Delete</button>
+                    <button 
+                    @click="destroySkill(skill.id)"
+                    class="delete">Delete</button>
                 </td>
 
 
